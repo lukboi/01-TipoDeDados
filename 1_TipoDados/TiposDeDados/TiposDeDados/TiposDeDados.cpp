@@ -58,6 +58,8 @@ int main()
 	int horas = 0;
 	int minutos = 0;
 	int segundos = 0;
+	string resposta = "";
+	bool gaycheck = (resposta == "sim");
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
@@ -71,7 +73,14 @@ int main()
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
 	cout << "Sua idade em segundos e: " << segundos << endl;
-
+	cout << "ultima pergunta: Voce e gay?('sim' ou 'nao')" << endl;
+	cin >> resposta;
+	if (resposta == "sim") {
+		cout << "Vish, ala o cara kkkkkkkkkkkkkkkk" << endl;
+		}
+	else {
+		cout << "mentira, eh gay sim kkkkkkkkkk" << endl;
+	}
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
 
